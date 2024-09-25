@@ -1,0 +1,72 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    text-align: center;
+}
+.input-box {
+
+} */
+    
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Reset default margin */
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.box {
+    text-align: center;
+}
+
+
+
+.input-box {
+    margin-bottom: 25px; /* Space between input fields */
+}
+
+.input-box input {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Space inside the input */
+    border: 1px solid black; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for input text */
+    transition: border 0.3s; /* Smooth transition for border change */
+}
+
+
+
+.rember-forgot {
+    display: flex;
+    justify-content: space-between; /* Space between label and link */
+    align-items: center; /* Align items vertically */
+}
+
+
+
+button{
+    background-color: #000;
+    color: #f4f4f4;
+    width: 100%;
+    margin: 10px;
+}
+
+.regester-link {
+    margin-top: 15px; /* Space above register link */
+}
+
+.regester-link p {
+    font-size: 14px; /* Font size for the link text */
+}
+
+.regester-link a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
