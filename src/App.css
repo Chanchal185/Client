@@ -1,10 +1,14 @@
-/* App.css */
-.App {
-  text-align: center;
-  margin-top: 50px;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+/* .App {
+  text-align: center;
+} */
 
-.box {
+/* .box {
   max-width: 400px;
   margin: auto;
   padding: 20px;
@@ -38,4 +42,4 @@
 
 .button button:hover {
   background-color: #0056b3;
-}
+} */

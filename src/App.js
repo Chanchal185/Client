@@ -1,9 +1,8 @@
-// App.js
 import React from 'react';
-import { Route, Routes, Link } from 'react-router-dom'; // Use Routes for v6
+import { Route, Routes, Link } from 'react-router-dom'; 
 import Login from './Components/Login/Login.js';
 import Signup from './Components/Signup/Signup.js';
-import './App.css'; // Import your global styles if needed
+import './App.css'; 
 
 const App = () => {
   return (

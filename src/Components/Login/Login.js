@@ -1,6 +1,5 @@
-// Login.js
-import React, { useState } from 'react'; // Import useState
-import { Link } from 'react-router-dom'; // Import Link
+import React, { useState } from 'react'; 
+import { Link } from 'react-router-dom'; 
 import './Login.css';
 
 const Login = () => {
@@ -19,22 +18,10 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <h1>Login</h1>
           <div className='input-box'>
-            <input 
-              type='email' 
-              placeholder='Email@gmail.com' 
-              required 
-              value={email} 
-              onChange={(e) => setEmail(e.target.value)} 
-            />
+            <input type='email' placeholder='Email@gmail.com'  required value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div className='input-box'>
-            <input 
-              type='password' 
-              placeholder='Password' 
-              required 
-              value={password} 
-              onChange={(e) => setPassword(e.target.value)} 
-            />
+            <input type='password' placeholder='Password' required value={password} onChange={(e) => setPassword(e.target.value)} />
           </div>
           <div className='button'>
             <button type='submit'>Login</button>

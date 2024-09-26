@@ -1,6 +1,5 @@
-// Signup.js
-import React, { useState } from 'react'; // Import useState
-import { Link } from 'react-router-dom'; // Import Link
+import React, { useState } from 'react'; 
+import { Link } from 'react-router-dom'; 
 import './Signup.css';
 
 const Signup = () => {
