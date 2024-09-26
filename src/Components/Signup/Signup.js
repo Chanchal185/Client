@@ -1,23 +1,25 @@
-// Login.js
+// Signup.js
 import React, { useState } from 'react'; // Import useState
 import { Link } from 'react-router-dom'; // Import Link
-import './Login.css';
+import './Signup.css';
 
-const Login = () => {
+const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Email:', email);
     console.log('Password:', password);
+    console.log('Confirm Password:', confirmPassword);
   };
 
   return (
     <div>
       <div className='box'>
         <form onSubmit={handleSubmit}>
-          <h1>Login</h1>
+          <h1>Signup</h1>
           <div className='input-box'>
             <input 
               type='email' 
@@ -36,12 +38,21 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)} 
             />
           </div>
-          <div className='button'>
-            <button type='submit'>Login</button>
+          <div className='input-box'>
+            <input 
+              type='password' 
+              placeholder='Confirm Password' 
+              required 
+              value={confirmPassword} 
+              onChange={(e) => setConfirmPassword(e.target.value)} 
+            />
           </div>
-          <div className='regester-link'>
+          <div className='button'>
+            <button type='submit'>Signup</button>
+          </div>
+          <div className='login-link'>
             <p>
-              Don't have an account? <Link to='/signup'>Register</Link>
+              Already have an account? <Link to='/login'>Login</Link>
             </p>
           </div>
         </form>
@@ -50,4 +61,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
