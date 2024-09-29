@@ -8,7 +8,6 @@ const Profile = () => {
         profilePicture: "https://via.placeholder.com/150",
         tasks: [
             { id: 1, title: "Complete project report", completed: true },
-            { id: 2, title: "Attend team meeting", completed: false },
         ]
     });
 
